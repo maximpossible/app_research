@@ -1,3 +1,5 @@
 app_research.*
 bin/
 obj/
+logs.txt
+iter_logs.txt

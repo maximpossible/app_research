@@ -3,7 +3,7 @@
 #include <iostream>
 #include <random>
 #include <time.h>
-#include "map.h"
+#include "include/map.h"
 
 Community::Community(unsigned int count_of_users) : Users(new User[count_of_users]), count_of_users(count_of_users), count_of_active_users(0) {}
 
@@ -20,7 +20,7 @@ void Community::CreateFriendsCommunity(unsigned short chance_of_acquaintance, un
     for (unsigned int i = 0; i < count_of_users; i++)
     {
         short state = rand() % 100;
-        if (state < chance_of_active_state)         //задание статуса
+        if (state < chance_of_active_state)         //задание статуса, с вероятностью chance_of_active_state
         {
             Users[i].state = ACTIVE;
             count_of_active_users++;
@@ -32,7 +32,7 @@ void Community::CreateFriendsCommunity(unsigned short chance_of_acquaintance, un
 
         for (unsigned j = 0; j < max_count_of_friends; j++)
         {
-            unsigned int id = rand() % count_of_users;
+            unsigned int id = rand() % count_of_users;         //добавление случайных друзей
             unsigned int chance = rand() % 100;
 
             if (chance < chance_of_acquaintance && id != i)
