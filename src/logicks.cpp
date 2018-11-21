@@ -25,10 +25,10 @@ void Community::startResearch(unsigned int count_of_iterations)
 {
     srand(time(0));
     std::ofstream iters_logs;
-    iters_logs.open("iter_logs.txt");   //файл для логов "Номер_Итерации | количество активных полльзователей"
+    iters_logs.open("./logs/iter_logs.txt");   //файл для логов "Номер_Итерации | количество активных полльзователей"
 
     std::ofstream logs;
-    logs.open("logs.txt");              //файл для логов общего вида "НОМЕР_ИТЕРАЦИИ | НОМЕР_ПОЛЬЗОВАТЕЛЯ"
+    logs.open("./logs/logs.txt");              //файл для логов общего вида "НОМЕР_ИТЕРАЦИИ | НОМЕР_ПОЛЬЗОВАТЕЛЯ"
                                     //СОСТОЯНИЕ ПОЛЬЗОВАТЕЛЯ | КОЛИЧЕСТВО_ДРУЗЕЙ | КОЛИЧЕСТВО_АКТИВНЫХ_ДРУЗЕЙ"
 
     for (unsigned int iters = 0; iters < count_of_iterations; iters++) //цикл по итерациям

@@ -3,8 +3,8 @@ import numpy as np
 import sys
 import os
 
-f = open("logs.txt")
-f2 = open("iter_logs.txt")
+f = open("./logs/logs.txt")
+f2 = open("./logs/iter_logs.txt")
 
 iters = []
 ids = []

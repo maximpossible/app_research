@@ -7,7 +7,7 @@
 
 int main()
 {
-    Community com(1000000);
+    Community com(100);
 
     com.CreateFriendsCommunity(30, 40, 15);
 
@@ -16,7 +16,7 @@ int main()
     tim = clock() - tim;
 
     std::cout << "Time is: " << tim / CLOCKS_PER_SEC << std::endl;
-    system("python3 graph_show.py");
+    system("python3 plot/graph_show.py");
 
     return 0;
 }

@@ -3,3 +3,4 @@ bin/
 obj/
 logs.txt
 iter_logs.txt
+logs/
