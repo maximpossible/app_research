@@ -40,14 +40,6 @@ for line in f2:
 f.close()
 f2.close()
 
-# iters_x = np.array(iters)
-# ids_x = np.array(ids)
-# active_friends_y = np.array(active_friends)
-# active_users_y = np.array(active_users)
-
-# indeces = iters_x.argsort()
-# indeces2 = active_users_y.argsort()
-
 
 plt.title("Графики")
 plt.subplot(3, 1, 1)
@@ -56,16 +48,5 @@ plt.xlabel('number of iteration')
 plt.ylabel('count of active users')
 plt.grid(True)
 
-# plt.subplot(3, 1, 2)
-# plt.plot(t, uvix, color='red', linewidth=3, label='Impulse')
-# plt.xlabel('t')
-# plt.ylabel('Uvix')
-# plt.grid(True)
-
-# plt.subplot(3, 1, 3)
-# plt.plot(uvx[indeces], uvix[indeces], color='blue', linewidth=3, label='График передаточной характеристики')
-# plt.xlabel('Uvx')
-# plt.ylabel('Uvix')
-# plt.grid(True)
 plt.show()
-# exit(0)
+exit(0)
